@@ -6,7 +6,6 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="http://protege.stanford.edu/ontologies/groceries/">
@@ -78,9 +77,9 @@
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/groceries/hasNutritionInfo -->
+    <!-- http://protege.stanford.edu/ontologies/groceries/hasNutritionalInfo -->
 
-    <owl:ObjectProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/hasNutritionInfo"/>
+    <owl:ObjectProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/hasNutritionalInfo"/>
     
 
 
@@ -103,14 +102,6 @@
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/groceries/isSoldByStore -->
-
-    <owl:ObjectProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/isSoldByStore">
-        <rdfs:domain rdf:resource="http://protege.stanford.edu/ontologies/groceries/GroceryItem"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -119,12 +110,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/groceries/address -->
-
-    <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/address"/>
     
 
 
@@ -158,50 +143,6 @@
     <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/hasTotalFat">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/groceries/name -->
-
-    <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/name"/>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/groceries/price -->
-
-    <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/price">
-        <rdfs:domain rdf:resource="http://protege.stanford.edu/ontologies/groceries/GroceryItem"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/groceries/productName -->
-
-    <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/productName">
-        <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/ontologies/groceries/name"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/groceries/storeName -->
-
-    <owl:DatatypeProperty rdf:about="http://protege.stanford.edu/ontologies/groceries/storeName">
-        <rdfs:subPropertyOf rdf:resource="http://protege.stanford.edu/ontologies/groceries/name"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
-    
-
-
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lon -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lon">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
